@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="principal">
+        <p class="hub">Seja bem vindo ao indexador, clique no dia desejado para entrar</p>
+        <div class="links">
+            <div class="a">
+                <a href="dia1.html">Dia 1 <br>(Quinta-feira) </a>
+            </div>
+            <div class="b">
+                <a href="dia2.html">Dia 2 <br>(Sexta-feira) </a>
+            </div>
+            <div class="c">
+                <a href="dia3.html">Dia 3 <br>(Sábado) </a>
+            </div>
+            <div class="d">
+                <a href="dia4.html">Dia 4 <br>(Domingo) </a>
+            </div>
+        </div>
+        <div class="parte">
+            <div class="e">
+                <a href="dia5.html">Dia 5 <br>(Segunda-feira) </a>
+            </div>
+            <div class="f">
+                <a href="dia6.html">Dia 6 <br>(Terça-feira) </a>
+            </div>
+            <div class="g">
+                <a href="dia7.html">Dia 7 <br>(Quarta-feira) </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+            console.log('Service Worker registrado com sucesso:', registration);
+          }).catch(function(error) {
+            console.log('Falha ao registrar o Service Worker:', error);
+          });
+        }
+      </script>      
+</body>
+</html>
